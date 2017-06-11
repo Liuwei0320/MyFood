@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_reg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/backgroud"
+    tools:context="com.example.liuwei112.Ordering.activity.RegActivity">
+
+    <TextView
+        android:text="注册用户"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textSize="36sp"
+        android:id="@+id/textView2"
+        android:textStyle="normal|bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:textSize="18sp"
+        android:id="@+id/pass"
+        android:hint="密码"
+        android:drawableLeft="@drawable/ic_pass"
+        android:textColorHint="@color/colorGray"
+        android:layout_width="250dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/reg_name"
+        android:layout_alignStart="@+id/reg_name" />
+
+    <EditText
+        android:layout_height="40dp"
+        android:inputType="textPersonName|phone"
+        android:ems="10"
+        android:textSize="18sp"
+        android:id="@+id/mobilenum"
+        android:hint="电话号码"
+        android:drawableLeft="@drawable/ic_phone"
+        android:textColorHint="@color/colorGray"
+        android:layout_marginTop="15dp"
+        android:layout_width="250dp"
+        android:layout_below="@+id/pass"
+        android:layout_alignStart="@+id/pass" />
+
+    <EditText
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:ems="10"
+        android:textSize="18sp"
+        android:id="@+id/comment"
+        android:hint="备注"
+        android:drawableLeft="@drawable/ic_comment"
+        android:textColorHint="@color/colorGray"
+        android:layout_width="250dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/adress"
+        android:layout_alignStart="@+id/adress" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/comment"
+         >
+
+        <Button
+            android:text="返回"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/back"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/shape_button"/>
+
+        <Button
+            android:text="注册"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:id="@+id/reg"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/shape_button"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="18sp"
+        android:id="@+id/adress"
+        android:hint="送餐地址"
+        android:drawableLeft="@drawable/ic_adress"
+        android:textColorHint="@color/colorGray"
+        android:layout_width="250dp"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:maxLines="5"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/mobilenum"
+        android:layout_alignStart="@+id/mobilenum" />
+
+    <EditText
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/ic_person"
+        android:textColorHint="@color/colorGray"
+        android:id="@+id/reg_name"
+        android:hint="用户名"
+        android:layout_width="250dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
